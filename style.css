@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+      
+
+    background-image: url(Wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img{
+    border: 5px solid #7c111100; 
+    border-radius: 50%;
+    image-rendering: pixelated;
+    padding: 0;
+    filter: drop-shadow(1px 1px 20px orange);
+    width: 22vw; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: transform .5s ease, filter .5s ease;
+    animation: rotate 5s linear infinite;
+    
+}
+img:hover{
+    filter: drop-shadow(1px 1px 30px orange); 
+    transform: scale(1.2);
+    cursor: pointer;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(.9);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);  
+    }
+}
+.florc{  
+    width:1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tl{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    color: yellow;
+    font-weight: 800;
+}
